@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Router>
-      <div className="flex bg-gradient-to-r from-orange-700 to-black">
+      <div className="flex min-h-screen max-h-full bg-gradient-to-r from-orange-700 to-black">
         <Navbar /> {/* Menu a tendina */}
         <div className="flex-grow">
           <Routes>

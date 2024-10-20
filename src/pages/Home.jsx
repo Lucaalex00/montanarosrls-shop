@@ -49,8 +49,8 @@ const Home = () => {
   return (
     <div className="h-full p-8 text-center flex flex-col gap-5">
         <div className='flex flex-col p-3 gap-10'>
-            <h1 className="text-5xl font-bold opacity-90 text-orange-600 bg-clip-text drop-shadow-[0_0_10px_rgba(0,0,0,0.9)]">Benvenuti nella nostra Birreria Artigianale</h1>
-            <p className="text-xl text-white mx-auto w-2/4 max-h-[300px] overflow-auto bg-white bg-opacity-5 rounded-2xl p-6">
+            <h1 className="text-5xl font-bold opacity-90 text-orange-600 z-0 bg-clip-text">Benvenuti nella nostra Birreria Artigianale</h1>
+            <p className="text-xl text-white mx-auto w-full md:w-1/2 max-h-[300px] overflow-auto bg-white bg-opacity-5 rounded-2xl p-6">
                 Scopri le nostre birre uniche, fatte con passione e ingredienti selezionati. Sperimenta il vero sapore artigianale! <br /><br />
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt perferendis fugiat est harum non incidunt assumenda delectus sapiente velit, facere alias ullam optio pariatur minus atque itaque fuga ex.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aperiam assumenda accusantium optio consequuntur reiciendis numquam vel nulla consectetur accusamus magni illum magnam repellat, natus nam distinctio voluptates quo unde!

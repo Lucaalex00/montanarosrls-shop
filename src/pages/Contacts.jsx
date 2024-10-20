@@ -2,9 +2,9 @@ import React from 'react';
 import { QRCode } from 'react-qrcode-logo';
 
 const ContactPage = () => {
-  const imagePath = '/images/Montanaro-FRONT.jpeg'; // Percorso dell'immagine
-  const phoneNumberAndrea = '+39 335-7443529';
-  const phoneNumberValentino = '+39 335-7443827';
+  const imagePath = '/images/ticket-images/Montanaro-FRONT.jpeg'; // Percorso dell'immagine
+  const phoneNumberAndrea = '+393357443529';
+  const phoneNumberValentino = '+393357443827';
   const whatsappLink = (phoneNumber) => `https://wa.me/${phoneNumber}`;
 
   // Funzione per aprire l'immagine
@@ -13,7 +13,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-orange-700 to-black min-h-screen text-center flex items-center justify-center p-4">
+    <div className="bg-gradient-to-r from-orange-700 to-black min-h-screen py-4 px-16 text-center flex items-center justify-center">
       <div className="max-w-3xl w-full bg-white rounded-lg shadow-md p-5">
         <h1 className="text-3xl font-bold text-center mb-6 text-dark">
             Montanaro SRLS

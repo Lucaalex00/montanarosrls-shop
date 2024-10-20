@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='h-screen fixed bg-gradient-to-l from-orange-700 to-black'>
+    <div className='h-screen fixed bg-gradient-to-l from-orange-700 to-black z-30'>
       <button onClick={toggleMenu} className="text-white hover:text-dark duration-500 absolute p-4">
         {isOpen ? '' : <FaBars size={36} />}
       </button>

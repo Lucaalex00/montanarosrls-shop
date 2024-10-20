@@ -92,7 +92,7 @@ const Events = () => {
                 placeholder="Cerca un evento per nome o luogo..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className="border mx-auto text-center border-gray-300 rounded px-5 py-2 mb-4"
+                className="border mx-auto w-1/2 md:w-1/4 text-center border-gray-300 rounded px-5 py-2 mb-4"
             />
 
             {/* Pulsante per ordinare per data */}

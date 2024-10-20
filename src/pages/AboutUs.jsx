@@ -64,7 +64,7 @@ const AboutUs = () => {
             </section>
 
             {/* Storia e Valori */}
-            <section className="container mx-auto py-16 px-4 md:px-10 text-gray-300">
+            <section className="container mx-auto py-16 px-20 text-gray-300">
                 <h2 className="text-4xl font-bold text-center mb-10 text-orange-700">La Nostra Storia e i Nostri Valori</h2>
                 <div className="md:flex md:justify-between">
                     <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
