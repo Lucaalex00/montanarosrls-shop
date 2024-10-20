@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Contacts from './pages/Contacts';
+import Products from './pages/Products';
+import AboutUs from './pages/AboutUs';
+import Events from './pages/Events';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link text-red-400"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="flex bg-gradient-to-r from-orange-700 to-black">
+        <Navbar /> {/* Menu a tendina */}
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/events" element={<Events />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
