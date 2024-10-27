@@ -35,12 +35,18 @@ const ProductManagement = () => {
 
     // Filter and sort products
     const filteredProducts = products
-        .filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()))
-        .filter(product => (showAvailable ? product.availability : !product.availability)) // Filtra per disponibilità
-        .sort((a, b) => {
-            return priceSortOrder ? a.price - b.price : b.price - a.price; // Ordina per prezzo
-        });
-
+    .filter(product => {
+        // Filtra per nome o collaborazione
+        const matchesName = product.name.toLowerCase().includes(searchTerm.toLowerCase());
+        const matchesCollab = product.collab ? product.collab.toLowerCase().includes(searchTerm.toLowerCase()) : false;
+        
+        // La ricerca è valida se soddisfa almeno uno dei due campi
+        return matchesName || matchesCollab;
+    })
+    .filter(product => (showAvailable ? product.availability : !product.availability)) // Filtra per disponibilità
+    .sort((a, b) => {
+        return priceSortOrder ? a.price - b.price : b.price - a.price; // Ordina per prezzo
+    });
     return (
         <div className="p-4 mx-auto flex flex-col">
             <h1 className="text-4xl font-bold text-white text-center mb-6">Gestione Prodotti</h1>
@@ -90,6 +96,22 @@ const ProductManagement = () => {
                                 <span className="text-red-500 font-bold">Non disponibile</span>
                             )}</p>
                         <p><strong>Codice Unico:</strong> {product.unique_code}</p>
+                         {/* Mostra collaborazione e link se disponibili */}
+                         {product.collab && (
+                            <p>
+                                <strong>Collaborazione: </strong> {product.collab}
+                            </p>
+                        )}
+                        {product.collab_link && (
+                            <a
+                                href={product.collab_link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 underline hover:text-blue-800 duration-300"
+                            >
+                                {'> '+ product.collab + ' <'} 
+                            </a>
+                        )}
                     </div>
                 ))}
             </div>

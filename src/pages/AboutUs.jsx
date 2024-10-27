@@ -43,21 +43,9 @@ const AboutUs = () => {
                         {/* Membri del team */}
                         <div className="bg-black rounded-lg shadow-lg p-6 w-full md:w-1/3 hover:shadow-2xl transition border border-gray-800">
                             <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=4" alt="CEO" />
-                            <h3 className="text-2xl font-bold mb-2 text-white">Luca Rossi</h3>
-                            <p className="text-lg font-semibold text-orange-700">Fondatore e CEO</p>
-                            <p className="text-gray-400">Luca è il visionario dietro l'azienda, con un'esperienza decennale nel mondo delle birre artigianali.</p>
-                        </div>
-                        <div className="bg-black rounded-lg shadow-lg p-6 w-full md:w-1/3 hover:shadow-2xl transition border border-gray-800">
-                            <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=5" alt="Master Brewer" />
-                            <h3 className="text-2xl font-bold mb-2 text-white">Giulia Bianchi</h3>
-                            <p className="text-lg font-semibold text-orange-700">Mastro Birraio</p>
-                            <p className="text-gray-400">Giulia crea ricette innovative e uniche, mettendo in ogni birra il suo tocco personale.</p>
-                        </div>
-                        <div className="bg-black rounded-lg shadow-lg p-6 w-full md:w-1/3 hover:shadow-2xl transition border border-gray-800">
-                            <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=6" alt="Marketing" />
-                            <h3 className="text-2xl font-bold mb-2 text-white">Marco Verdi</h3>
-                            <p className="text-lg font-semibold text-orange-700">Responsabile Marketing</p>
-                            <p className="text-gray-400">Marco guida il nostro marketing e sviluppa strategie per condividere la nostra passione con il mondo.</p>
+                            <h3 className="text-2xl font-bold mb-2 text-white">Andrea Montanaro</h3>
+                            <p className="text-lg font-semibold text-orange-700">Proprietario</p>
+                            <p className="text-gray-400">Andrea è il titolare dell'azienda, con un'esperienza decennale nel mondo delle birre artigianali.</p>
                         </div>
                     </div>
                 </div>

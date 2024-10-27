@@ -2,6 +2,17 @@ import React, { useEffect, useState } from 'react';
 import eventsData from '../data/Events.json'; // Assicurati che il percorso sia corretto
 import { FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa'; // Icone per decorare
 
+/********************************************************* 
+ * 
+ *  AGGIUNGERE VARIABILE DI APPOGGIO PER GOOGLE MAPS
+ *  https://maps.com/{LOCALITA}
+ *  Fare controllo se la località ha degli spazi (san didero)
+ *  inserire al posto dello ' ' il simbolo '+' per autogenerare i link dei luoghi
+ * 
+*********************************************************/
+
+
+
 const Events = () => {
     const [events, setEvents] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');

@@ -6,20 +6,22 @@ import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Navbar from './components/Navbar';
 
+
 function App() {
   return (
     <Router>
-      <div className="flex min-h-screen max-h-full bg-gradient-to-r from-orange-700 to-black">
+      <div className="flex relative min-h-screen max-h-full bg-gradient-to-r from-orange-700 to-black">
         <Navbar /> {/* Menu a tendina */}
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />}/> 
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/products" element={<Products />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/events" element={<Events />} />
           </Routes>
         </div>
+        
       </div>
     </Router>
   );

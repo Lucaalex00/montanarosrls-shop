@@ -4,7 +4,6 @@ import { QRCode } from 'react-qrcode-logo';
 const ContactPage = () => {
   const imagePath = '/images/ticket-images/Montanaro-FRONT.jpeg'; // Percorso dell'immagine
   const phoneNumberAndrea = '+393357443529';
-  const phoneNumberValentino = '+393357443827';
   const whatsappLink = (phoneNumber) => `https://wa.me/${phoneNumber}`;
 
   // Funzione per aprire l'immagine
@@ -25,7 +24,7 @@ const ContactPage = () => {
             14049 Nizza Monferrato AT
           </p>
           <p className="text-lg text-gray-800 mb-2">
-            <strong>Telefono (Office):</strong>{' '}
+            <strong>Telefono (Ufficio):</strong>{' '}
             <a href="tel:+390141725046" className="text-blue-500 hover:underline">
               +39 0141 725046
             </a>
@@ -44,7 +43,7 @@ const ContactPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-gray-700 mb-3">Contacts</h2>
+        <h2 className="text-2xl font-semibold text-gray-700 mb-3">Contatti</h2>
         <div className="mb-6">
           <p className="text-lg text-gray-800 mb-5">
             <strong>Andrea Montanaro:</strong> <br />
@@ -56,24 +55,6 @@ const ContactPage = () => {
             <strong>
               <a
                 href={whatsappLink(phoneNumberAndrea)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 p-2 rounded text-xl hover:bg-green-700 duration-500"
-              >
-                WhatsApp
-              </a>
-            </strong>
-          </p>
-          <p className="text-lg text-gray-800">
-            <strong>Valentino Ambrosia:</strong><br />
-            <a href={`tel:${phoneNumberValentino}`} className="text-blue-500 hover:underline">
-              {phoneNumberValentino}
-            </a>{' '}
-            <br />
-            <br />
-            <strong>
-              <a
-                href={whatsappLink(phoneNumberValentino)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 p-2 rounded text-xl hover:bg-green-700 duration-500"

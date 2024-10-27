@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import FooterComponent from '../components/FooterComponent';
 const Home = () => {
   const images = [
     'https://picsum.photos/id/1015/600/400', // Image 1
@@ -48,22 +48,10 @@ const Home = () => {
 
   return (
     <div className="h-full p-8 text-center flex flex-col gap-5">
-        <div className='flex flex-col p-3 gap-10'>
-            <h1 className="text-5xl font-bold opacity-90 text-orange-600 z-0 bg-clip-text">Benvenuti nella nostra Birreria Artigianale</h1>
+        <div className='flex flex-col p-3 gap-16'>
+            <h1 className="text-5xl font-bold opacity-90 text-orange-600 z-0 bg-clip-text">Benvenuti in Montanaro srls</h1>
             <p className="text-xl text-white mx-auto w-full md:w-1/2 max-h-[300px] overflow-auto bg-white bg-opacity-5 rounded-2xl p-6">
-                Scopri le nostre birre uniche, fatte con passione e ingredienti selezionati. Sperimenta il vero sapore artigianale! <br /><br />
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nesciunt perferendis fugiat est harum non incidunt assumenda delectus sapiente velit, facere alias ullam optio pariatur minus atque itaque fuga ex.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aperiam assumenda accusantium optio consequuntur reiciendis numquam vel nulla consectetur accusamus magni illum magnam repellat, natus nam distinctio voluptates quo unde!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore ipsa, delectus tenetur nemo repudiandae saepe dolor non, blanditiis deleniti asperiores adipisci animi nisi minima eligendi similique molestiae quaerat ad!
-                Ducimus saepe praesentium quae odio sequi repudiandae animi exercitationem deleniti at mollitia? Voluptatibus atque recusandae at numquam reprehenderit amet iure accusamus rem, asperiores consequatur repellendus aspernatur cum animi magni perspiciatis?
-                Voluptatem non ab doloremque amet dignissimos quam odio a magnam, necessitatibus omnis id beatae maiores adipisci nemo corrupti, sed deserunt officiis veritatis natus. Earum excepturi, eligendi atque culpa saepe facilis.
-                Ex, voluptas! Assumenda minus libero rerum, doloremque impedit eveniet temporibus expedita asperiores obcaecati dignissimos amet cupiditate maxime adipisci ad soluta eius molestiae reiciendis! Consectetur placeat reprehenderit sint dolor corrupti ad.
-                Est libero similique excepturi, corrupti, culpa neque beatae cupiditate, sequi necessitatibus soluta aut autem! Incidunt voluptatibus quidem porro eum, iusto, sed quo, omnis distinctio dignissimos ut facere sint deleniti harum.
-                Accusantium quo itaque, vel laborum beatae consequuntur delectus, nulla magni veritatis, saepe soluta necessitatibus quis? Eos corrupti accusamus enim excepturi aperiam et, odio obcaecati, voluptatem distinctio quia tempore laborum veniam!
-                Sed odio, voluptates sequi consectetur enim magnam tenetur quis inventore porro molestiae deleniti possimus, quasi doloribus atque, incidunt in ipsam quia expedita. Adipisci quidem eum ipsam mollitia quos. Dolor, illum.
-                Voluptas, natus maxime inventore qui doloremque quaerat quae accusantium quam itaque distinctio consequatur corporis quis perspiciatis quas odit! Ipsa impedit autem labore quas in voluptas ea quis nulla, nam odio!
-                Perferendis eum sapiente quaerat tempora nostrum assumenda repellendus rerum minima odio possimus a, officiis voluptate praesentium debitis nihil delectus quis quae? Laudantium veniam dolor corrupti architecto sed, autem praesentium accusamus!
-                Fugiat in consectetur dignissimos dolores repellat tenetur a tempora rerum soluta quo quasi necessitatibus mollitia dolorum quia magni quidem, ab aspernatur at excepturi natus nulla assumenda! Aliquid deserunt eaque assumenda.
+            Scopri le nostre birre artigianali, realizzate con cura e passione <br/>  Ogni sorso racchiude ingredienti selezionati e un equilibrio di sapori unico, per un’ esperienza autentica che celebra la qualità e la tradizione.<br/> Scegli tra una varietà di birre, perfette per ogni palato e occasione.
             </p>
       </div>
 
@@ -94,6 +82,7 @@ const Home = () => {
           {currentImageIndex + 1} / {images.length}
         </div>
       </div>
+      <FooterComponent/>
     </div>
   );
 };
