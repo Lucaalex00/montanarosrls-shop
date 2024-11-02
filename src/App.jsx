@@ -6,6 +6,7 @@ import Beers from './pages/Beers';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Sidebar from './components/Sidebar';
+import Giftpack from './pages/Giftpack';
 import { FaBars } from 'react-icons/fa';
 
 
@@ -23,9 +24,9 @@ function App() {
 
   return (
     <Router>
-      <div className="flex relative pt-10 min-h-screen max-h-full bg-gradient-to-r from-orange-700 to-black">
+      <div className="flex relative pt-10 min-h-screen max-h-full bg-gradient-custom">
         {/* Pulsante per aprire la sidebar */}
-        <button onClick={toggleNav} className="text-white hover:text-dark duration-500 absolute top-0 left-0 p-4">
+        <button onClick={toggleNav} className="text-white hover:text-gray-500 duration-500 absolute top-0 left-0 p-4">
           {isOpenNav ? '' : <FaBars size={36} />}
         </button>
 
@@ -44,6 +45,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/beers" element={<Beers />} />
+            <Route path="/giftpacks" element={<Giftpack />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/events" element={<Events />} />
           </Routes>

@@ -1,0 +1,60 @@
+
+
+[
+    {
+        "id": 1,
+        "name": "Gordon Xmas - GIFTPACK",
+        "type": "Rosso Rubino",
+        "alcohol_content": 8.8,
+        "size": "4x33cl + 1 bicchiere",
+        "availability": false,
+        "source": "Scotland",
+        "description" : "Proprio come Babbo Natale, Gordon Xmas indossa il tradizionale abito rosso a fiocchi bianchi, un appuntamento che si rinnova dal 1924, anno in cui la Gordon Xmas inaugurala tradizione delle cuvèe di Natale ad opera di John Martin che elaborò una speciale Scotch Ale con il malto e il luppolo rimasti dal raccolto autunnale... cosa che le conferisce un aroma e un gusto più pronunciati, con un sapore speziato, particolarmente adatto per le festività natalizie.",
+        "limited_event" : "Natale",
+        "image": "https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 2,
+        "name": "Van den Bossche - Kerst Pater",
+        "type": "Scuro",
+        "alcohol_content": 9,
+        "size": "33cl",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Xmas Belgian Strong Ale, elargisce fragranzie di malto tostato, fruta rossa e scura, caramello, melassa, toffee, drupacee, spezie, un pizzico di liquirizia, un tocco di cioccolato ed una leggera nota vinosa. Al palato è dolce, con una sapidità fruttata, di vino rosso liquoroto, caramello, cioccolato e malto tostato.",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/Kerst Pater 33cl.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 3,
+        "name": "Van den Bossche - Kerst Pater",
+        "type": "Scura",
+        "alcohol_content": 9,
+        "size": "75cl",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Xmas Belgian Strong Ale, elargisce fragranzie di malto tostato, fruta rossa e scura, caramello, melassa, toffee, drupacee, spezie, un pizzico di liquirizia, un tocco di cioccolato ed una leggera nota vinosa. Al palato è dolce, con una sapidità fruttata, di vino rosso liquoroto, caramello, cioccolato e malto tostato.",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/Kerst Pater 75cl.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 4,
+        "name": "Vocation Silent Night",
+        "type": "Scura",
+        "alcohol_content": 10,
+        "size": "44cl",
+        "availability": false,
+        "source": "Inghilterra",
+        "description" : "Una delle più celebri creazioni del birrificio, offre una ricca complessità di sapori : menta e cacao iniziali lasciano il posto a cioccolato e caffè. Mint Cocoa Stout",
+        "limited_event" : "Natale",
+        "image": "https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE",
+        "collab": null,
+        "collab_link": null
+    }
+]

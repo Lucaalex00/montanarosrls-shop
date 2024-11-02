@@ -5,7 +5,7 @@ const AboutUs = () => {
     return (
         <div className="bg-black text-white">
             {/* Hero Section */}
-            <section className="h-[500px] text-white bg-gradient-to-r from-orange-700 to-black flex items-center justify-center shadow-lg">
+            <section className="h-[500px] text-white bg-gradient-custom flex items-center justify-center shadow-lg">
                 <div className="text-center bg-gradient-to-t from-black via-transparent to-transparent w-full h-full flex flex-col items-center justify-center">
                     <h1 className="text-5xl font-bold mb-4 drop-shadow-2xl">Benvenuti nel Mondo delle Birre Artigianali</h1> <br/>
                     <p className="text-xl text-gray-300 drop-shadow-lg">Produciamo birre di qualità per veri intenditori</p>
@@ -52,26 +52,11 @@ const AboutUs = () => {
 
             {/* Storia e Valori */}
             <section className="container mx-auto py-16 px-20 text-gray-300">
-                <h2 className="text-4xl font-bold text-center mb-10 text-orange-700">La Nostra Storia e i Nostri Valori</h2>
+                <h2 className="text-4xl font-bold text-center mb-10 text-orange-700">I Nostri Servizi</h2>
                 <div className="md:flex md:justify-between">
-                    <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                        <h3 className="text-3xl font-semibold mb-4 text-white">La nostra Storia</h3>
-                        <p>
-                            Nata nel cuore dell'Italia, la nostra azienda di birre artigianali ha iniziato come un piccolo birrificio a conduzione familiare. Con il tempo, ci siamo evoluti e abbiamo affinato le nostre tecniche di produzione, mantenendo intatto lo spirito autentico e tradizionale che ci contraddistingue.
-                        </p>
-                        <p>
-                            Oggi, le nostre birre sono apprezzate in tutto il paese e oltre, grazie alla nostra dedizione e alla passione che mettiamo in ogni fase del processo.
-                        </p>
-                    </div>
-                    <div className="md:w-1/2">
-                        <h3 className="text-3xl font-semibold mb-4 text-white text-right">I nostri Valori</h3>
-                        <ul className="list-disc list-inside text-gray-300 text-right">
-                            <li className="mb-2">Passione per la qualità</li>
-                            <li className="mb-2">Rispetto per le tradizioni</li>
-                            <li className="mb-2">Innovazione continua</li>
-                            <li className="mb-2">Sostenibilità e responsabilità</li>
-                            <li className="mb-2">Attenzione ai dettagli</li>
-                        </ul>
+                    <div className="md:w-1/2 flex flex-col gap-5 mx-auto mb-8 md:mb-0 md:pr-8">
+                    <img src="/images/info-images/Background_IMG - Chi Siamo.jpeg" alt="Servizio a domicilio" />
+                    <p className='text-center'> il <strong>PREZZO</strong> e i <strong>TEMPI</strong> di consegna possono variare in base alla quantità di articoli ordinati e alla distanza dalla nostra sede. </p>
                     </div>
                 </div>
             </section>
