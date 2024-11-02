@@ -1,5 +1,5 @@
 import React from 'react';
-import { QRCode } from 'react-qrcode-logo';
+import { QRCodeSVG } from 'qrcode.react';
 
 const ContactPage = () => {
   const imagePath = '/images/ticket-images/Montanaro-FRONT.jpeg'; // Percorso dell'immagine
@@ -12,7 +12,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-orange-700 to-black min-h-screen py-4 px-16 text-center flex items-center justify-center">
+    <div className="bg-gradient-to-r from-orange-700 to-black min-h-screen py-6 px-8 text-center flex items-center justify-center">
       <div className="max-w-3xl w-full bg-white rounded-lg shadow-md p-5">
         <h1 className="text-3xl font-bold text-center mb-6 text-dark">
             Montanaro SRLS
@@ -68,9 +68,9 @@ const ContactPage = () => {
         <h2 className="text-2xl font-semibold text-gray-700 mb-4">Scan the QR Code</h2>
         <div 
           onClick={handleOpenImage} 
-          className="w-1/4 mx-auto flex justify-center cursor-pointer mb-4"
+          className="w-1/2 mx-auto flex justify-center cursor-pointer mb-4"
         >
-          <QRCode value="https://www.google.com/maps/place//data=!4m2!3m1!1s0x478785dc89d8e2fd:0xbb59bc13ba0db0e?sa=X&ved=1t:8290&ictx=111" size={170} /> {/* Scansione porta ai prodotti */}
+          <QRCodeSVG value="https://www.google.com/maps/place//data=!4m2!3m1!1s0x478785dc89d8e2fd:0xbb59bc13ba0db0e?sa=X&ved=1t:8290&ictx=111" size={170} /> {/* Scansione porta ai prodotti */}
         </div>
         <p className="text-center text-gray-600">
           Scansiona il QRCode e scopri come raggiungerci

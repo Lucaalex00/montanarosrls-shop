@@ -5,8 +5,7 @@ const AboutUs = () => {
     return (
         <div className="bg-black text-white">
             {/* Hero Section */}
-            <section className="bg-cover bg-center h-[500px] text-white flex items-center justify-center shadow-lg" 
-                style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1517511620798-cec17d428bc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHRyYW1vbnxlbnwwfHx8fDE2MzQ5NzMwODk&ixlib=rb-1.2.1&q=80&w=1080)' }}>
+            <section className="h-[500px] text-white bg-gradient-to-r from-orange-700 to-black flex items-center justify-center shadow-lg">
                 <div className="text-center bg-gradient-to-t from-black via-transparent to-transparent w-full h-full flex flex-col items-center justify-center">
                     <h1 className="text-5xl font-bold mb-4 drop-shadow-2xl">Benvenuti nel Mondo delle Birre Artigianali</h1> <br/>
                     <p className="text-xl text-gray-300 drop-shadow-lg">Produciamo birre di qualità per veri intenditori</p>
