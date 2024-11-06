@@ -1,0 +1,124 @@
+
+
+[
+    {
+        "id": 1,
+        "name": "Bottigliette Acqua Valmora",
+        "type": "Naturale - Frizzante",
+        "size": "0.5l",
+        "availability": true,
+        "description" : "Acqua Valmora in confezione da 12 bottiglie.",
+        "limited_event" : null,
+        "image": "/images/others-images/Valmora 0.5l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 2,
+        "name": "Bottiglie Acqua Valmora",
+        "type": "Naturale - Frizzante",
+        "size": "1.5l",
+        "availability": true,
+        "description" : "Acqua Valmora in confezione da 6 bottiglie.",
+        "limited_event" : null,
+        "image": "/images/others-images/Valmora 1.5l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 3,
+        "name": "Bottiglie Acqua Martina",
+        "type": "Naturale - Frizzante",
+        "size": "1.5l",
+        "availability": true,
+        "description" : "Acqua Martina in confezione da 6 bottiglie.",
+        "limited_event" : null,
+        "image": "/images/others-images/Martina 1.5l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 4,
+        "name": "Bottiglie Acqua Calizzano",
+        "type": "Naturale - Frizzante - Lieve ",
+        "size": "1l",
+        "availability": true,
+        "description" : "Acqua Calizzano in bottiglia di vetro.",
+        "limited_event" : null,
+        "image": "/images/others-images/Calizzano 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 5,
+        "name": "Bottiglie Acqua Sant'Anna",
+        "type": "Naturale - Frizzante",
+        "size": "1.5l",
+        "availability": true,
+        "description" : "Acqua Sant'Anna in confezione da 6 bottiglie.",
+        "limited_event" : null,
+        "image": "/images/others-images/Sant'Anna 6x1.5l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 6,
+        "name": "Bottiglie Acqua Rocchetta",
+        "type": "Naturale",
+        "size": "1.5l",
+        "availability": true,
+        "description" : "Acqua Rocchetta in confezione da 6 bottiglie.",
+        "limited_event" : null,
+        "image": "/images/others-images/Rocchetta 1.5l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 7,
+        "name": "Bibite Calizzano Vetro",
+        "type": "Gassosa - Chinotto - Aranciata - Cedro",
+        "size": "1l",
+        "availability": true,
+        "description" : "Calizzano presenta le sue bibite nei sapori : TRADIZIONALE, TIPICO, DOLCE e CARATTERISTICO.",
+        "limited_event" : null,
+        "image": "/images/others-images/Bibite Calizzano 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 8,
+        "name": "Bibite in Lattina",
+        "type": "Estathè Pesca/Limone - Coca Cola - Coca Cola Zero",
+        "size": "33cl",
+        "availability": true,
+        "description" : "Le più conosciute bibite in lattina, qui riunite a vostra disposizione.",
+        "limited_event" : null,
+        "image": "/images/others-images/Bibite Lattina 33cl.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 9,
+        "name": "Estathè in Bicchierino",
+        "type": "Limone - Pesca",
+        "size": "6x20cl",
+        "availability": true,
+        "description" : "Il prodotto più venduto & conosciuto dal colosso italiano 'Ferrero'.",
+        "limited_event" : null,
+        "image": "/images/others-images/Estathe Bicchiere 6x20cl.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 10,
+        "name": "Coca Cola in Vetro",
+        "type": "Coca Cola",
+        "size": "1l",
+        "availability": true,
+        "description" : "Il formato Coca-Cola che tutti amano.",
+        "limited_event" : null,
+        "image": "/images/others-images/Coca Vetro 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    }
+]

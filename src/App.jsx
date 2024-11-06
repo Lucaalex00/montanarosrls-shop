@@ -2,11 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
-import Beers from './pages/Beers';
+import Beers from './pages/Products/Beers';
 import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import Sidebar from './components/Sidebar';
-import Giftpack from './pages/Giftpack';
+import Giftpacks from './pages/Products/Giftpacks';
+import Others from './pages/Products/Others'
 import { FaBars } from 'react-icons/fa';
 
 
@@ -45,7 +46,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/beers" element={<Beers />} />
-            <Route path="/giftpacks" element={<Giftpack />} />
+            <Route path="/giftpacks" element={<Giftpacks />} />
+            <Route path="/others" element={<Others />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/events" element={<Events />} />
           </Routes>
