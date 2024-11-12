@@ -46,8 +46,8 @@ const Sidebar = ({ isOpenNav, toggleNav }) => {
               <Link to="/beers" onClick={toggleNav}>
                 <li className="hover:bg-gray-700 opacity-80 pl-8 py-2 text-[1.2rem]">Birre</li>
               </Link>
-              <Link to="/wines" onClick={toggleNav}>
-                <li className="hover:bg-gray-700 opacity-80 pl-8 py-2 text-[1.2rem]">Vini</li>
+              <Link to="/winesandliquors" onClick={toggleNav}>
+                <li className="hover:bg-gray-700 opacity-80 pl-8 py-2 text-[1.2rem]">Vini & Liquori</li>
               </Link>
               <Link to="/giftpacks" onClick={toggleNav}>
                 <li className="hover:bg-gray-700 opacity-80 pl-8 py-2 text-[1.2rem]">Confezioni</li>

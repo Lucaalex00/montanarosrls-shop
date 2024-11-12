@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Limoncello",
+        "type": "Liquore",
+        "alcohol_content": "N/A",
+        "size": "2l",
+        "availability": true,
+        "description" : "Il tipico gusto del limone a fine pasto, nel formato 2 litri.",
+        "limited_event" : null,
+        "image": "/images/wines-liquors-images/Limoncello 2l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 2,
+        "name": "Perlino Rosso",
+        "type": "Vino",
+        "alcohol_content": "N/A",
+        "size": "1l",
+        "availability": true,
+        "description" : "Bottiglia di vino rosso della azienda Perlino.",
+        "limited_event" : null,
+        "image": "/images/wines-liquors-images/Perlino Rosso 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 3,
+        "name": "Aperitivo Bitter",
+        "type": "Liquore",
+        "alcohol_content": "N/A",
+        "size": "1l",
+        "availability": true,
+        "description" : "Ottimo liquore, adatto agli aperitivi.",
+        "limited_event" : null,
+        "image": "/images/wines-liquors-images/Aperitivo Bitter 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 4,
+        "name": "Regent's London Gin",
+        "type": "Liquore",
+        "alcohol_content": "N/A",
+        "size": "1l",
+        "availability": true,
+        "description" : "Il classico London Gin.",
+        "limited_event" : null,
+        "image": "/images/wines-liquors-images/Regent's London Gin 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 5,
+        "name": "Jagermeister",
+        "type": "Liquore",
+        "alcohol_content": "N/A",
+        "size": "1l",
+        "availability": true,
+        "description" : "Lo Jagermeister di cui tutti hanno bisogno.",
+        "limited_event" : null,
+        "image": "/images/wines-liquors-images/Jagermeister 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 6,
+        "name": "Suvazska - Liquore alla Menta",
+        "type": "Liquore",
+        "alcohol_content": "N/A",
+        "size": "1l",
+        "availability": true,
+        "description" : "Soprendente liquore alla menta 'Suvazska'.",
+        "limited_event" : null,
+        "image": "/images/wines-liquors-images/Liquore alla Menta 1l.jpeg",
+        "collab": null,
+        "collab_link": null
+    }
+]

@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <div className="h-full p-10 text-center flex flex-col gap-4">
         <div className='flex flex-col p-3 gap-16'>
-            <h1 className="text-5xl font-bold opacity-90 text-orange-600 z-0 bg-clip-text">Benvenuti in Montanaro SRLS</h1>
+            <h1 className="text-5xl font-bold opacity-90 text-black z-0 bg-clip-text">Benvenuti in Montanaro SRLS</h1>
             <p className="text-lg text-white mx-auto w-full md:w-1/2 max-h-[300px] overflow-auto bg-white bg-opacity-5 rounded-2xl p-6">
             Scopri le nostre birre artigianali, realizzate con cura e passione <br/>  Ogni sorso racchiude ingredienti selezionati e un equilibrio di sapori unico, per un’ esperienza autentica che celebra la qualità e la tradizione.<br/> Scegli tra una varietà di birre, perfette per ogni palato e occasione.
             </p>

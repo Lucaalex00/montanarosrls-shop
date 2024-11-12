@@ -41,7 +41,7 @@ const AboutUs = () => {
                     <div className="flex flex-wrap justify-center gap-8">
                         {/* Membri del team */}
                         <div className="bg-black rounded-lg shadow-lg p-6 w-full md:w-1/3 hover:shadow-2xl transition border border-gray-800">
-                            <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=4" alt="CEO" />
+                            {/* <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=4" alt="CEO" /> */}
                             <h3 className="text-2xl font-bold mb-2 text-white">Andrea Montanaro</h3>
                             <p className="text-lg font-semibold text-orange-700">Proprietario</p>
                             <p className="text-gray-400">Andrea è il titolare dell'azienda, con un'esperienza decennale nel mondo delle birre artigianali.</p>

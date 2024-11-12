@@ -12,7 +12,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-orange-700 to-black min-h-screen py-6 px-8 text-center flex items-center justify-center">
+    <div className="bg-gradient-custom min-h-screen py-6 px-8 text-center flex items-center justify-center">
       <div className="max-w-3xl w-full bg-white rounded-lg shadow-md p-5">
         <h1 className="text-3xl font-bold text-center mb-6 text-dark">
             Montanaro SRLS

@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar';
 import Giftpacks from './pages/Products/Giftpacks';
 import Others from './pages/Products/Others'
 import { FaBars } from 'react-icons/fa';
+import WinesAndLiquors from './pages/Products/WinesAndLiquors';
 
 
 function App() {
@@ -47,9 +48,12 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/beers" element={<Beers />} />
             <Route path="/giftpacks" element={<Giftpacks />} />
+            <Route path="/winesandliquors" element={<WinesAndLiquors />} />
             <Route path="/others" element={<Others />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/events" element={<Events />} />
+            <Route path="*" element={<Home />} />
+            {/* IN CASO DI PATH ERRATO -> HOME */}
           </Routes>
         </div>
       </div>
