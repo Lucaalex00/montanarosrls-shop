@@ -124,7 +124,7 @@ const OthersManagement = () => {
                         <img
                             src={selectedImage}
                             alt="Immagine ingrandita"
-                            className="max-w-full w-[350px] max-h-full"
+                            className="max-w-[350px] max-h-[350px]"
                         />
                     </div>
                 </div>

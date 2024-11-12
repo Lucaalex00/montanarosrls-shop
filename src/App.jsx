@@ -8,7 +8,7 @@ import Events from './pages/Events';
 import Sidebar from './components/Sidebar';
 import Giftpacks from './pages/Products/Giftpacks';
 import Others from './pages/Products/Others'
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaFlag } from 'react-icons/fa';
 import WinesAndLiquors from './pages/Products/WinesAndLiquors';
 
 
@@ -36,7 +36,7 @@ function App() {
         <Sidebar isOpenNav={isOpenNav} toggleNav={toggleNav} />
 
         {/* Pulsante per aprire il selettore di lingua */}
-        <button className="bg-red-500 rounded p-3 absolute top-2 right-2" onClick={toggleMenuLanguage}> Lingua </button>
+        <button className="bg-red-500 hidden sm:block rounded p-3 absolute top-2 right-2" onClick={toggleMenuLanguage}> <FaFlag/> </button>
         
         {/* Selettore di lingua Google Translate */}
         <div id="google_translate_element" className={`text-center p-2 rounded-lg shadow-lg absolute top-16 right-0 ${isOpenMenuLanguage ? '' : 'hidden'}`}></div>

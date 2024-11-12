@@ -103,7 +103,7 @@ const Events = () => {
                 placeholder="Cerca un evento per nome o luogo..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className="border mx-auto w-1/2 md:w-1/4 text-center border-gray-300 rounded px-5 py-2 mb-4"
+                className="border mx-auto w-3/4 md:w-1/4 text-center border-gray-300 rounded px-2 py-2 mb-4"
             />
 
             {/* Pulsante per ordinare per data */}
@@ -141,7 +141,7 @@ const Events = () => {
             {/* Notifica per eventi di oggi */}
             {todayEvents.length > 0 && (
                 <div
-                    className="bg-yellow-300 text-black text-center p-2 mb-4 rounded cursor-pointer w-2/4 mx-auto"
+                    className="bg-yellow-300 text-black text-center p-2 mb-4 rounded cursor-pointer w-3/4 sm:w-2/4 lg:w-1/4 mx-auto"
                     onClick={() => setEventFilter('today')} // Cliccando sulla notifica mostra solo gli eventi di oggi
                 >
                     Oggi c'è qualche evento {todayEvents.length > 1 ? 'i' : ''} in corso! <br/>

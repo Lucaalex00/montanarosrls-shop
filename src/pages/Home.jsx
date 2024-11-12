@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import FooterComponent from '../components/FooterComponent';
 const Home = () => {
   const images = [
-    'https://picsum.photos/id/1015/600/400', // Image 1
-    'https://picsum.photos/id/1016/600/400', // Image 2
-    'https://picsum.photos/id/1018/600/400', // Image 3
-    'https://picsum.photos/id/1019/600/400', // Image 4
-    'https://picsum.photos/id/1020/600/400', // Image 5
-    'https://picsum.photos/id/1021/600/400', // Image 6
-    'https://picsum.photos/id/1022/600/400', // Image 7
-    'https://picsum.photos/id/1023/600/400', // Image 8
+    "/images/beers-images/Malonne Bière Brut Calvados 75cl.jpeg", // Image 1
+    "/images/beers-images/Still Nacht 33cl.jpeg", // Image 2
+    "/images/beers-images/Père Noèl 33cl.jpeg", // Image 3
+    "/images/giftpacks-images/Westvleteren 2x33cl.jpeg", // Image 4
+    "/images/beers-images/Corsendonk Christmas 33cl.jpeg", // Image 5
+    "/images/beers-images/Lupulus Hibernatus 33cl.jpeg", // Image 6
+    "/images/beers-images/Gouden Carolus 75cl.jpeg", // Image 7
+    "/images/beers-images/Mikkeller 75cl.jpeg", // Image 8
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -60,25 +60,25 @@ const Home = () => {
         <img
           src={images[currentImageIndex]}
           alt={`Slide ${currentImageIndex + 1}`}
-          className={`w-full h-auto rounded-lg shadow-2xl border-dark border transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+          className={`max w-1/2 mx-auto rounded-lg shadow-2xl border-dark border transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         />
 
         {/* Pulsanti per controllare il carosello */}
         <button
-          className="absolute text-[1.2rem] top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-700 duration-500 p-4 rounded-r"
+          className="absolute text-[1.2rem] top-1/2 left-1/4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-500 duration-500 p-2 rounded-r"
           onClick={handlePrev}
         >
           &lt;
         </button>
         <button
-          className="absolute text-[1.2rem] top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-700 duration-500 p-4 rounded-l"
+          className="absolute text-[1.2rem] top-1/2 right-1/4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-500 duration-500 p-2 rounded-l"
           onClick={handleNext}
         >
           &gt;
         </button>
 
         {/* Indicatore della slide corrente */}
-        <div className="absolute bottom-2 left-2 text-white bg-black bg-opacity-50 p-2 rounded">
+        <div className="absolute bottom-1 left-1/4 text-white bg-black bg-opacity-50 p-2 rounded">
           {currentImageIndex + 1} / {images.length}
         </div>
       </div>

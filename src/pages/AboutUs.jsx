@@ -65,7 +65,7 @@ const AboutUs = () => {
             <section className="bg-orange-700 py-16 text-center text-white shadow-lg">
                 <h2 className="text-4xl font-bold mb-6 drop-shadow-md">Scopri la nostra gamma di birre artigianali!</h2>
                 <p className="text-xl mb-8 text-gray-200">Visita il nostro negozio online e ordina la tua birra preferita oggi stesso!</p>
-                <Link to="/products" className="bg-white text-orange-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 shadow-md transition">
+                <Link to="/beers" className="bg-white text-orange-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 shadow-md transition">
                     Vai al Negozio
                 </Link>
             </section>

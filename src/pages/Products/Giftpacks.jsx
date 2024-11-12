@@ -45,14 +45,14 @@ const GiftPacksManagement = () => {
         .filter(giftpack => (showAvailable ? giftpack.availability : !giftpack.availability));
 
     return (
-        <div className="p-4 mt-10 mx-auto flex flex-col">
+        <div className="p-1 sm:p-4 mt-10 mx-auto flex flex-col">
             <h1 className="text-4xl font-bold text-white text-center mb-6">Confezioni Regalo</h1>
             <input
                 type="text"
                 placeholder="Cerca un prodotto..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className="border mx-auto text-center border-gray-300 rounded px-5 py-2 mb-4"
+                className="border mx-auto text-center border-gray-300 rounded px-1 py-2 mb-4"
             />
             <div className="flex justify-center mb-4">
                 <button
@@ -64,7 +64,7 @@ const GiftPacksManagement = () => {
                 <select
                     value={selectedEvent}
                     onChange={handleEventChange}
-                    className="border mx-1 rounded px-3 py-2"
+                    className="border mx-1 rounded p-1 py-2"
                 >
                     <option value="">Tutti gli Eventi</option>
                     <option value="Natale">Natale</option>

@@ -45,14 +45,14 @@ const WinesAndLiquorsManagement = () => {
         .filter(wineliquor => (showAvailable ? wineliquor.availability : !wineliquor.availability));
 
     return (
-        <div className="p-4 mt-10 mx-auto flex flex-col">
+        <div className="p-2 sm:p-4 mt-10 mx-auto flex flex-col">
             <h1 className="text-4xl font-bold text-white text-center mb-6">Vini & Liquori</h1>
             <input
                 type="text"
                 placeholder="Cerca un prodotto..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className="border mx-auto text-center border-gray-300 rounded px-5 py-2 mb-4"
+                className="border mx-auto text-center border-gray-300 rounded px-2 py-2 mb-4"
             />
             <div className="flex justify-center mb-4">
                 <button
