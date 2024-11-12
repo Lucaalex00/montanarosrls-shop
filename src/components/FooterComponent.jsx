@@ -14,7 +14,7 @@ const FooterComponent = () => {
             <button
                 onClick={toggleCredits}
                 className={`flex mx-auto items-center justify-center w-10 h-10 rounded-full text-white transition-colors  bg-opacity-30 duration-500 ${
-                    showCredits ? 'bg-transparent' : 'bg-gray-300'
+                    showCredits ? 'bg-transparent' : 'bg-gray-800'
                 }`}
             >
                 <FaInfoCircle className="text-xl" />

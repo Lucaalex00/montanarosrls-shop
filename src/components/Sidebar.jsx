@@ -15,7 +15,7 @@ const Sidebar = ({ isOpenNav, toggleNav }) => {
       {isOpenNav && <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={toggleNav}></div>}
       
       <div
-        className={`fixed top-0 left-0 h-full w-screen sm:w-64 bg-black bg-opacity-70 sm:bg-transparent z-50 shadow-2xl transform ${
+        className={`fixed top-0 left-0 h-full w-screen sm:w-64 overflow-y-auto bg-black bg-opacity-70 sm:bg-transparent z-50 shadow-2xl transform ${
           isOpenNav ? 'translate-x-0' : '-translate-x-full'
         } transition-transform duration-300 ease-in-out`}
       >

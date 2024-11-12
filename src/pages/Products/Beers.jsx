@@ -45,7 +45,7 @@ const BeersManagement = () => {
         .filter(beer => (showAvailable ? beer.availability : !beer.availability));
 
     return (
-        <div className="p-4 mt-10 mx-auto flex flex-col">
+        <div className="sm:p-4 mt-10 mx-auto flex flex-col">
             <h1 className="text-4xl font-bold text-white text-center mb-6">Birre</h1>
             <input
                 type="text"
@@ -72,15 +72,15 @@ const BeersManagement = () => {
             </div>
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                 {filteredBeers.map(beer => (
-                    <div key={beer.id} className="relative flex bg-white border rounded shadow-lg m-2 p-5 hover:bg-gray-300 duration-500">
+                    <div key={beer.id} className="relative flex bg-white border rounded shadow-lg m-2 p-2 sm:p-5 hover:bg-gray-300 duration-500">
                         <div
                             className={`absolute top-1 right-1 rounded-full h-3 w-3 ${beer.availability ? 'bg-green-500' : 'bg-red-500'}`}
                         ></div>
                         <img
                             src={beer.image}
                             alt={beer.name}
-                            className="sm:w-[200px] w-[100px] object-contain sm:block h-auto rounded cursor-pointer"
-                            onClick={() => handleImageClick(beer.image)}
+                            className="sm:w-[200px] w-[80px] object-contain sm:block h-auto rounded cursor-pointer"
+                            onClick={() => beer.image !== 'https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE' ? handleImageClick(beer.image) : ''}
                         />
                         <div className="ml-5 flex flex-col gap-2 justify-between max-h-[300px] overflow-y-auto">
                             <h2 className="text-3xl font-semibold mb-1">{beer.name}</h2>

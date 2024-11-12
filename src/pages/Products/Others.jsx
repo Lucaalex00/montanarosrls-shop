@@ -45,7 +45,7 @@ const OthersManagement = () => {
         .filter(other => (showAvailable ? other.availability : !other.availability));
 
     return (
-        <div className="p-4 mt-10 mx-auto flex flex-col">
+        <div className="p-2 mt-10 mx-auto flex flex-col">
             <h1 className="text-4xl font-bold text-white text-center mb-6">Altri Prodotti</h1>
             <input
                 type="text"
@@ -72,17 +72,17 @@ const OthersManagement = () => {
             </div>
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                 {filteredOthers.map(other => (
-                    <div key={other.id} className="relative flex bg-white border rounded shadow-lg m-2 p-5 hover:bg-gray-300 duration-500">
+                    <div key={other.id} className="relative flex bg-white border rounded shadow-lg m-2 p-2 sm:p-5 hover:bg-gray-300 duration-500">
                         <div
                             className={`absolute top-1 right-1 rounded-full h-3 w-3 ${other.availability ? 'bg-green-500' : 'bg-red-500'}`}
                         ></div>
                         <img
                             src={other.image}
                             alt={other.name}
-                            className="sm:w-[200px] max-w-[120px] object-contain sm:block h-auto rounded cursor-pointer"
-                            onClick={() => handleImageClick(other.image)}
+                            className="sm:w-[200px] max-w-[80px] object-contain sm:block h-auto rounded cursor-pointer"
+                            onClick={() => other.image !== 'https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE' ? handleImageClick(other.image) : ''}
                         />
-                        <div className="ml-5 flex flex-col gap-2 justify-between max-h-[300px] overflow-y-auto">
+                        <div className="ml-2 sm:ml-5 flex flex-col gap-2 justify-between max-h-[300px] overflow-y-auto">
                             <h2 className="text-3xl font-semibold mb-1">{other.name}</h2>
                             <h5 className='italic mb-2'>{other.source}</h5>
                             <p className='text-gray-700'><strong> </strong> {other.size}</p>

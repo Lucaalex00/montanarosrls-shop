@@ -72,17 +72,17 @@ const GiftPacksManagement = () => {
             </div>
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                 {filteredGiftPacks.map(giftpack => (
-                    <div key={giftpack.id} className="relative flex bg-white border rounded shadow-lg m-2 p-5 hover:bg-gray-300 duration-500">
+                    <div key={giftpack.id} className="relative flex bg-white border rounded shadow-lg m-2 p-2  sm:p-5 hover:bg-gray-300 duration-500">
                         <div
                             className={`absolute top-1 right-1 rounded-full h-3 w-3 ${giftpack.availability ? 'bg-green-500' : 'bg-red-500'}`}
                         ></div>
                         <img
                             src={giftpack.image}
                             alt={giftpack.name}
-                            className="sm:w-[200px] w-[100px] object-contain sm:block h-auto rounded cursor-pointer"
-                            onClick={() => handleImageClick(giftpack.image)}
+                            className="sm:w-[200px] w-[60px] object-contain sm:block h-auto rounded cursor-pointer"
+                            onClick={() => giftpack.image !== 'https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE' ? handleImageClick(giftpack.image) : ''}
                         />
-                        <div className="ml-5 flex flex-col gap-2 justify-between max-h-[300px] overflow-y-auto">
+                        <div className="ml-3 sm:ml-5 flex flex-col gap-2 justify-between max-h-[300px] overflow-y-auto">
                             <h2 className="text-3xl font-semibold mb-1">{giftpack.name}</h2>
                             <h5 className='italic mb-2'>{giftpack.source}</h5>
                             <p className='text-gray-600'><strong> </strong> {giftpack.size}</p>
