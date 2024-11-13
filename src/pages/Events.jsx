@@ -178,14 +178,19 @@ const Events = () => {
                         </div>
 
                         {/* Link a Google Maps */}
-                        <a
-                            href={event.map_link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-500 underline text-sm"
-                        >
-                            Visualizza su Google Maps
-                        </a>
+                        {event.map_link != null
+                            ?
+                            <a
+                                href={event.map_link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 underline text-sm"
+                            >
+                                Visualizza su Google Maps
+                            </a>
+                            :
+                            ''
+                        }
                     </div>
                 ))}
             </div>

@@ -22,13 +22,13 @@ const Home = () => {
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setIsVisible(true); // Riporta la visibilità dell'immagine dopo averla cambiata
-      }, 200); // Il tempo della transizione prima di cambiare l'immagine
+      }, 500); // Il tempo della transizione prima di cambiare l'immagine
     }, 5000);
 
     return () => clearInterval(interval); // Pulisce l'interval quando il componente viene smontato
   }, [images.length]);
 
-  // Funzione per passare all'immagine precedente
+  /*  Funzione per passare all'immagine precedente
   const handlePrev = () => {
     setIsVisible(false);
     setTimeout(() => {
@@ -44,14 +44,14 @@ const Home = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
       setIsVisible(true);
     }, 200);
-  };
+  }; */
 
   return (
     <div className="h-full py-5 px-1 sm:py-2 text-center flex flex-col gap-2">
         <div className='flex flex-col p-3 gap-8'>
             <h1 className="text-5xl font-bold sm:w-1/2 mx-auto p-2 text-white bg-black border-black bg-opacity-10 rounded z-0">Benvenuti in Montanaro SRLS</h1>
             <p className="text-lg text-white mx-auto w-full md:w-1/2 bg-white bg-opacity-5 rounded-2xl p-6">
-            Scopri le nostre birre artigianali, realizzate con cura e passione <br/>  Ogni sorso racchiude ingredienti selezionati e un equilibrio di sapori unico, per un’ esperienza autentica che celebra la qualità e la tradizione.<br/> Scegli tra una varietà di birre, perfette per ogni palato e occasione.
+            Scopri i nostri servizi e prodotti selezionati da qualità e tradizione. <br/>  Scegli tra una varietà di birre, vini, bevande e non solo...<br/> Perfetto per ogni palato e occasione.
             </p>
       </div>
 
@@ -60,10 +60,10 @@ const Home = () => {
         <img
           src={images[currentImageIndex]}
           alt={`Slide ${currentImageIndex + 1}`}
-          className={`max w-1/2 mx-auto rounded-lg shadow-2xl border-dark border transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+          className={`max w-1/2 mx-auto rounded-lg shadow-2xl border-dark border transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         />
 
-        {/* Pulsanti per controllare il carosello */}
+        {/* {/* Pulsanti per controllare il carosello
         <button
           className="absolute text-[1.2rem] top-1/2 left-1/4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-500 duration-500 p-2 rounded-r"
           onClick={handlePrev}
@@ -75,7 +75,7 @@ const Home = () => {
           onClick={handleNext}
         >
           &gt;
-        </button>
+        </button> */}
 
         {/* Indicatore della slide corrente */}
         <div className="absolute bottom-1 left-1/4 text-white bg-black bg-opacity-50 p-2 rounded">

@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 /* TUTTE LE SCROLLBAR MODIFICATE */
-*{
-    scrollbar-width: thin;
-    scrollbar-color: black transparent;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black lightgray;
 }
-
-  

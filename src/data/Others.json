@@ -76,7 +76,7 @@
     {
         "id": 7,
         "name": "Bibite Calizzano Vetro",
-        "type": "Gassosa - Chinotto - Aranciata - Cedro",
+        "type": "Gassosa - Chinotto - Aranciata - Cedrata - Ginger - Pompelmo - Sanguinella ",
         "size": "1l",
         "availability": true,
         "description" : "Calizzano presenta le sue bibite nei sapori : TRADIZIONALE, TIPICO, DOLCE e CARATTERISTICO.",
@@ -88,7 +88,7 @@
     {
         "id": 8,
         "name": "Bibite in Lattina",
-        "type": "Estathè Pesca/Limone - Coca Cola - Coca Cola Zero",
+        "type": "Estathè Pesca/Limone - Coca Cola - Coca Cola Zero - Fanta - Sprite",
         "size": "33cl",
         "availability": true,
         "description" : "Le più conosciute bibite in lattina, qui riunite a vostra disposizione.",
