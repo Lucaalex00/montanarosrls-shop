@@ -10,12 +10,12 @@
     },
     {
       "id": 2,
-      "title": "Degustazione Vini",
-      "start_date": "2024-12-05",
-      "end_date": null,
-      "location": "Milano",
-      "map_link": null,
-      "poster_image": null
+      "title": "Fiera d'autunno",
+      "start_date": "2024-11-15",
+      "end_date": "2024-11-17",
+      "location": "Morbegno",
+      "map_link": "https://maps.app.goo.gl/WPES9WE8RU4JVCYk7",
+      "poster_image": "/images/events-images/Fiera-di-Autunno-Valtellina.png"
     },
     {
       "id": 3,
