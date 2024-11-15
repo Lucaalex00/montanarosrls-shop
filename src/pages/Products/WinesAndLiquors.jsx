@@ -87,7 +87,7 @@ const WinesAndLiquorsManagement = () => {
                             <h5 className='italic mb-2'>{wineliquor.source}</h5>
                             <p className='text-gray-600'><strong> </strong> {wineliquor.size}</p>
                             <p><strong>Tipologia: </strong> {wineliquor.type}</p>
-                            <p><strong>Gradazione: </strong> {wineliquor.alcohol_content}%</p>
+                            <p><strong>Gradazione: </strong> {wineliquor.alcohol_content}</p>
                             <p className=' my-2 italic text-gray-700'>{wineliquor.description}</p>
                             <p><strong>Disponibilità: </strong>
                                 {wineliquor.availability ? (

@@ -144,8 +144,8 @@ const Events = () => {
                     className="bg-yellow-300 text-black text-center p-2 mb-4 rounded cursor-pointer w-3/4 sm:w-2/4 lg:w-1/4 mx-auto"
                     onClick={() => setEventFilter('today')} // Cliccando sulla notifica mostra solo gli eventi di oggi
                 >
-                    Oggi c'è qualche evento {todayEvents.length > 1 ? 'i' : ''} in corso! <br/>
-                    <strong>Clicca per visualizzarlo.</strong>
+                    Eventi in corso... <br/>
+                    <strong>Clicca per visualizzare.</strong>
                 </div>
             )}
 
