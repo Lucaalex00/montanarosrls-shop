@@ -1,88 +1,119 @@
 import { useEffect, useState } from 'react';
 import FooterComponent from '../components/FooterComponent';
+
 const Home = () => {
   const images = [
-    "/images/beers-images/Malonne Bière Brut Calvados 75cl.jpeg", // Image 1
-    "/images/beers-images/Still Nacht 33cl.jpeg", // Image 2
-    "/images/beers-images/Père Noèl 33cl.jpeg", // Image 3
-    "/images/giftpacks-images/Westvleteren 2x33cl.jpeg", // Image 4
-    "/images/beers-images/Corsendonk Christmas 33cl.jpeg", // Image 5
-    "/images/beers-images/Lupulus Hibernatus 33cl.jpeg", // Image 6
-    "/images/beers-images/Gouden Carolus 75cl.jpeg", // Image 7
-    "/images/beers-images/Mikkeller 75cl.jpeg", // Image 8
+    "/images/beers-images/Malonne Bière Brut Calvados 75cl.jpeg",
+    "/images/beers-images/Still Nacht 33cl.jpeg",
+    "/images/beers-images/Père Noèl 33cl.jpeg",
+    "/images/giftpacks-images/Westvleteren 2x33cl.jpeg",
+    "/images/beers-images/Corsendonk Christmas 33cl.jpeg",
+    "/images/beers-images/Lupulus Hibernatus 33cl.jpeg",
+    "/images/beers-images/Gouden Carolus 75cl.jpeg",
+    "/images/beers-images/Mikkeller 75cl.jpeg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true); // Stato per controllare la visibilità dell'immagine
+  const [isVisible, setIsVisible] = useState(true);
 
-  // Cambia immagine automaticamente ogni 2 secondi
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsVisible(false); // Avvia la transizione di dissolvenza
+      setIsVisible(false);
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setIsVisible(true); // Riporta la visibilità dell'immagine dopo averla cambiata
-      }, 500); // Il tempo della transizione prima di cambiare l'immagine
+        setIsVisible(true);
+      }, 500);
     }, 5000);
 
-    return () => clearInterval(interval); // Pulisce l'interval quando il componente viene smontato
+    return () => clearInterval(interval);
   }, [images.length]);
 
-  /*  Funzione per passare all'immagine precedente
-  const handlePrev = () => {
-    setIsVisible(false);
-    setTimeout(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-      setIsVisible(true);
-    }, 200);
-  };
-
-  // Funzione per passare all'immagine successiva
-  const handleNext = () => {
-    setIsVisible(false);
-    setTimeout(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setIsVisible(true);
-    }, 200);
-  }; */
-
   return (
-    <div className="h-full py-5 px-1 sm:py-2 text-center flex flex-col gap-2">
-        <div className='flex flex-col p-3 gap-8'>
-            <h1 className="text-5xl font-bold sm:w-1/2 mx-auto p-2 text-white bg-black border-black bg-opacity-10 rounded z-0">Benvenuti in Montanaro SRLS</h1>
-            <p className="text-lg text-white mx-auto w-full md:w-1/2 bg-white bg-opacity-5 rounded-2xl p-6">
-            Scopri i nostri servizi e prodotti selezionati da qualità e tradizione. <br/>  Scegli tra una varietà di birre, vini, bevande e non solo...<br/> Perfetto per ogni palato e occasione.
-            </p>
-      </div>
-
-      <div className="relative w-full max-w-xl mx-auto">
-        {/* Immagine con transizione di dissolvenza */}
-        <img
-          src={images[currentImageIndex]}
-          alt={`Slide ${currentImageIndex + 1}`}
-          className={`max w-1/2 mx-auto rounded-lg shadow-2xl border-dark border transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-        />
-
-        {/* {/* Pulsanti per controllare il carosello
-        <button
-          className="absolute text-[1.2rem] top-1/2 left-1/4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-500 duration-500 p-2 rounded-r"
-          onClick={handlePrev}
-        >
-          &lt;
-        </button>
-        <button
-          className="absolute text-[1.2rem] top-1/2 right-1/4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white hover:text-orange-500 duration-500 p-2 rounded-l"
-          onClick={handleNext}
-        >
-          &gt;
-        </button> */}
-
-        {/* Indicatore della slide corrente */}
-        <div className="absolute bottom-1 left-1/4 text-white bg-black bg-opacity-50 p-2 rounded">
-          {currentImageIndex + 1} / {images.length}
+    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Hero Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-dark mb-6 drop-shadow-lg">
+            Benvenuti in
+            <span className="block mt-2 text-primary">
+              Montanaro SRLS
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl text-dark max-w-3xl mx-auto leading-relaxed bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border-2 border-primary/30">
+            Scopri i nostri servizi e prodotti selezionati con <span className="font-semibold text-primary">qualità</span> e <span className="font-semibold text-primary">tradizione</span>.
+            <br className="hidden sm:block" />
+            Scegli tra una varietà di <span className="text-primary font-medium">birre artigianali</span>, <span className="text-primary font-medium">vini pregiati</span>, bevande e non solo...
+            <br />
+            <span className="text-sm text-gray-700 mt-2 block">Perfetto per ogni palato e occasione.</span>
+          </p>
         </div>
+
+        {/* Carousel Section */}
+        <div className="relative max-w-2xl mx-auto mb-16">
+          <div className="relative group">
+            {/* Immagine principale */}
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-primary/50">
+              <img
+                src={images[currentImageIndex]}
+                alt={`Prodotto ${currentImageIndex + 1}`}
+                className={`w-full h-[400px] md:h-[500px] object-contain bg-transparent transition-all duration-500 transform ${
+                  isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                }`}
+              />
+            </div>
+
+            {/* Indicatore slide con dots */}
+            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex items-center gap-3 bg-dark/90 backdrop-blur-md px-6 py-3 rounded-full shadow-lg">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => {
+                    setIsVisible(false);
+                    setTimeout(() => {
+                      setCurrentImageIndex(index);
+                      setIsVisible(true);
+                    }, 300);
+                  }}
+                  className={`transition-all duration-300 rounded-full ${
+                    index === currentImageIndex
+                      ? 'w-8 h-3 bg-primary'
+                      : 'w-3 h-3 bg-white/50 hover:bg-white/80'
+                  }`}
+                  aria-label={`Vai alla slide ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Counter */}
+            <div className="absolute top-6 right-6 bg-dark/90 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              {currentImageIndex + 1} / {images.length}
+            </div>
+          </div>
+        </div>
+
+        {/* Features Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-6 border-2 border-primary/40 hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <div className="text-4xl mb-4">🍺</div>
+            <h3 className="text-xl font-bold text-dark mb-2">Birre Artigianali</h3>
+            <p className="text-gray-700">Selezione premium di birre provenienti da tutto il mondo</p>
+          </div>
+          
+          <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-6 border-2 border-primary/40 hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <div className="text-4xl mb-4">🍷</div>
+            <h3 className="text-xl font-bold text-dark mb-2">Vini Pregiati</h3>
+            <p className="text-gray-700">Le migliori etichette per ogni occasione speciale</p>
+          </div>
+          
+          <div className="bg-white/85 backdrop-blur-sm rounded-2xl p-6 border-2 border-primary/40 hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <div className="text-4xl mb-4">🎁</div>
+            <h3 className="text-xl font-bold text-dark mb-2">Confezioni Regalo</h3>
+            <p className="text-gray-700">Idee regalo perfette per sorprendere chi ami</p>
+          </div>
+        </div>
+
+        <FooterComponent />
       </div>
-      <FooterComponent/>
     </div>
   );
 };

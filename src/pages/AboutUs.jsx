@@ -3,78 +3,118 @@ import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
     return (
-        <div className="bg-black text-white">
+        <div className="min-h-screen">
             {/* Hero Section */}
-            <section className="h-[500px] text-white bg-gradient-custom flex items-center justify-center shadow-lg">
-                <div className="text-center bg-gradient-to-t from-black via-transparent to-transparent w-full h-full flex flex-col items-center justify-center">
-                    <h1 className="text-5xl font-bold mb-4 drop-shadow-2xl">Benvenuti in Montanaro Srls</h1> <br/>
-                    <p className="text-xl text-gray-300 w-1/2 drop-shadow-lg max-h-[400px] overflow-auto">Da oltre 40 anni offriamo un servizio a domicilio unico <br /> nel suo genere, in zona Asti, Alessandria e Sud Piemonte.
-                    <br/> Per la migliore qualità e il rispetto del nostro pianeta,<br/> preferiamo commercializzare prodotti in vetro e materiale riciclabile...<br/>  e da NOI puoi trovare dalle bevande più comuni alle più esclusive, prodotti di panetteria, birre artigianali, vini locali... <br/> Il tutto consegnato comodamente a casa tua.</p>
+            <section className="min-h-[500px]  py-16 px-4 flex items-center justify-center">
+                <div className="text-center  max-w-5xl">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 text-dark drop-shadow-lg">
+                        Benvenuti in <span className="text-white/80">Montanaro SRLS</span>
+                    </h1>
+                    <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
+                    <p className="text-xl text-dark bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border-2 border-primary/30 leading-relaxed">
+                        Da oltre <span className="font-bold text-primary">40 anni</span> offriamo un servizio a domicilio unico nel suo genere, in zona Asti, Alessandria e Sud Piemonte.
+                        <br/><br/> 
+                        Per la migliore qualità e il rispetto del nostro pianeta, preferiamo commercializzare prodotti in <span className="font-semibold text-primary">vetro e materiale riciclabile</span>...
+                        <br/><br/>
+                        Da NOI puoi trovare dalle bevande più comuni alle più esclusive, prodotti di panetteria, birre artigianali, vini locali...
+                        <br/>
+                        <span className="font-semibold text-primary">Il tutto consegnato comodamente a casa tua.</span>
+                    </p>
                 </div>
             </section>
 
             {/* Mission Section */}
-            <section className="container mx-auto py-16 px-4 md:px-10 text-center">
-                <h2 className="text-4xl font-bold mb-8 text-orange-700 drop-shadow-md">La Nostra Missione</h2>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-                    La passione per la birra e l'amore per la qualità ci guidano. Offriamo prodotti genuini, innovativi e di alta qualità, rispettando l'ambiente e promuovendo il consumo responsabile.
-                </p>
-                <div className="flex flex-wrap justify-center gap-6">
-                    <div className="w-full md:w-1/3 bg-gray-900 shadow-lg p-8 rounded-lg border border-gray-800 hover:shadow-2xl transition">
-                        <h3 className="text-2xl font-semibold mb-4 text-white">Garanzia</h3>
-                        <p className="text-gray-400">Cerchiamo sempre di garantire disponibilità sui nostri sapori senza mai scendere a compromessi sulla qualità.</p>
+            <section className="py-16 px-4 md:px-10">
+                <div className="container mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">La Nostra <strong className='text-white/80'> Missione</strong></h2>
+                        <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
                     </div>
-                    <div className="w-full md:w-1/3 bg-gray-900 shadow-lg p-8 rounded-lg border border-gray-800 hover:shadow-2xl transition">
-                        <h3 className="text-2xl font-semibold mb-4 text-white">Qualità</h3>
-                        <p className="text-gray-400">Se la qualità è solamente "sufficiente", non fa per noi !</p>
-                    </div>
-                    <div className="w-full md:w-1/3 bg-gray-900 shadow-lg p-8 rounded-lg border border-gray-800 hover:shadow-2xl transition">
-                        <h3 className="text-2xl font-semibold mb-4 text-white">Disponibilità</h3>
-                        <p className="text-gray-400">Non temiamo le lunghe distanze, nonostante i nostri prodotti arrivino in fretta, bisogna goderseli a piccoli sorsi. </p>
+                    <p className="text-xl text-dark max-w-4xl mx-auto mb-12 text-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                        La passione per la birra e l'amore per la qualità ci guidano. Offriamo prodotti genuini, innovativi e di alta qualità, rispettando l'ambiente e promuovendo il consumo responsabile.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                        <div className="bg-white/85 backdrop-blur-sm shadow-xl p-8 rounded-2xl border-2 border-primary/40 hover:border-primary hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                            <div className="text-5xl mb-4">🛡️</div>
+                            <h3 className="text-2xl font-bold mb-4 text-dark">Garanzia</h3>
+                            <p className="text-gray-700">Cerchiamo sempre di garantire disponibilità sui nostri sapori senza mai scendere a compromessi sulla qualità.</p>
+                        </div>
+                        <div className="bg-white/85 backdrop-blur-sm shadow-xl p-8 rounded-2xl border-2 border-primary/40 hover:border-primary hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                            <div className="text-5xl mb-4">⭐</div>
+                            <h3 className="text-2xl font-bold mb-4 text-dark">Qualità</h3>
+                            <p className="text-gray-700">Se la qualità è solamente "sufficiente", non fa per noi!</p>
+                        </div>
+                        <div className="bg-white/85 backdrop-blur-sm shadow-xl p-8 rounded-2xl border-2 border-primary/40 hover:border-primary hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                            <div className="text-5xl mb-4">🚚</div>
+                            <h3 className="text-2xl font-bold mb-4 text-dark">Disponibilità</h3>
+                            <p className="text-gray-700">Non temiamo le lunghe distanze, nonostante i nostri prodotti arrivino in fretta, bisogna goderseli a piccoli sorsi.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Team Section */}
-            <section className="bg-gray-900 py-16 shadow-lg">
-                <div className="container mx-auto px-4 md:px-10 text-center">
-                    <h2 className="text-4xl font-bold mb-10 text-orange-700">Il Nostro Team</h2>
-                    <div className="flex flex-wrap justify-center gap-8">
-                        {/* Membri del team */}
-                        <div className="bg-black rounded-lg shadow-lg p-6 w-full md:w-1/3 hover:shadow-2xl transition border border-gray-800">
-                            {/* <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=4" alt="CEO" /> */}
-                            <h3 className="text-2xl font-bold mb-2 text-white">Andrea Montanaro</h3>
-                            <p className="text-lg font-semibold text-orange-700">Proprietario</p>
-                            <p className="text-gray-400">Andrea è il titolare dell'azienda, con un'esperienza decennale in questa realtà, con l'aiuto di Mariangela, che lo supporta nell'organizzazione degli eventi fieristici e di degustazione.</p>
+            <section className="py-16 px-4 md:px-10 bg-white/50 backdrop-blur-sm">
+                <div className="container mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4">Il Nostro<strong className='text-white/80'> Team</strong></h2>
+                        <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-primary/30 hover:border-primary hover:shadow-2xl transition-all duration-300">
+                            <div className="text-6xl mb-4 text-center">👨‍💼</div>
+                            <h3 className="text-2xl font-bold mb-2 text-dark text-center">Andrea Montanaro</h3>
+                            <p className="text-lg font-semibold text-primary mb-4 text-center">Proprietario</p>
+                            <p className="text-gray-700 text-center">Andrea è il titolare dell'azienda, con un'esperienza decennale in questa realtà, con l'aiuto di Mariangela, che lo supporta nell'organizzazione degli eventi fieristici e di degustazione.</p>
                         </div>
-                        <div className="bg-black rounded-lg shadow-lg p-6 w-full md:w-1/3 hover:shadow-2xl transition border border-gray-800">
-                            {/* <img className="h-48 w-48 rounded-full mx-auto mb-4 shadow-xl" src="https://picsum.photos/200/200?random=4" alt="CEO" /> */}
-                            <h3 className="text-2xl font-bold mb-2 text-white">Valentino & Gianfranco</h3>
-                            <p className="text-lg font-semibold text-orange-700">Collaboratori</p>
-                            <p className="text-gray-400">Collaboratori nel servizio di consegna a domicilio.</p>
+                        <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-primary/30 hover:border-primary hover:shadow-2xl transition-all duration-300">
+                            <div className="text-6xl mb-4 text-center">👥</div>
+                            <h3 className="text-2xl font-bold mb-2 text-dark text-center">Valentino & Gianfranco</h3>
+                            <p className="text-lg font-semibold text-primary mb-4 text-center">Collaboratori</p>
+                            <p className="text-gray-700 text-center">Collaboratori nel servizio di consegna a domicilio.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Storia e Valori */}
-            <section className="container mx-auto py-16 px-20 text-gray-300">
-                <h2 className="text-4xl font-bold text-center mb-10 text-orange-700">I Nostri Servizi</h2>
-                <div className="md:flex md:justify-between">
-                    <div className="md:w-1/2 flex flex-col gap-5 mx-auto mb-8 md:mb-0 md:pr-8">
-                    <img src="/images/info-images/Background_IMG - Chi Siamo.jpeg" alt="Servizio a domicilio" />
-                    <p className='text-center'> il <strong>PREZZO</strong> e i <strong>TEMPI</strong> di consegna possono variare in base alla quantità di articoli ordinati e alla distanza dalla nostra sede. </p>
+            {/* Servizi Section */}
+            <section className="py-16 px-4 md:px-10">
+                <div className="container mx-auto max-w-6xl">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-4">I Nostri <strong className='text-white/80'>  Servizi</strong></h2>
+                        <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                    </div>
+                    <div className="bg-white/85 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden border-2 border-primary/30">
+                        <img 
+                            src="/images/info-images/Background_IMG - Chi Siamo.jpeg" 
+                            alt="Servizio a domicilio" 
+                            className="w-full h-[400px] object-cover"
+                        />
+                        <div className="p-8 text-center">
+                            <p className="text-lg text-gray-700">
+                                Il <strong className="text-primary">PREZZO</strong> e i <strong className="text-primary">TEMPI</strong> di consegna possono variare in base alla quantità di articoli ordinati e alla distanza dalla nostra sede.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Call to Action */}
-            <section className="bg-orange-700 py-16 text-center text-white shadow-lg">
-                <h2 className="text-4xl font-bold mb-6 drop-shadow-md">Scopri la nostra gamma di birre artigianali!</h2>
-                <p className="text-xl mb-8 text-gray-200">Visita il nostro negozio online e ordina la tua birra preferita oggi stesso!</p>
-                <Link to="/beers" className="bg-white text-orange-700 font-bold py-3 px-8 rounded-full hover:bg-gray-100 shadow-md transition">
-                    Vai al Negozio
-                </Link>
+            <section className="py-16 px-4 text-center bg-primary/90 backdrop-blur-sm shadow-2xl">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-6  text-black drop-shadow-md">
+                        Scopri la nostra <strong className='text-white/80'> gamma di prodotti! </strong>
+                    </h2>
+                    <p className="text-xl mb-8 text-white/90">
+                        Visita il nostro catalogo online e ordina i tuoi prodotti preferiti oggi stesso!
+                    </p>
+                    <Link 
+                        to="/beers" 
+                        className="inline-block bg-white text-primary font-bold py-4 px-10 rounded-full hover:bg-dark hover:text-white shadow-xl transition-all duration-300 hover:scale-110 text-lg"
+                    >
+                        Vai al Catalogo 🍺
+                    </Link>
+                </div>
             </section>
         </div>
     );

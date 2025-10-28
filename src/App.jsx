@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import Beers from './pages/Products/Beers';
@@ -15,6 +15,7 @@ import WinesAndLiquors from './pages/Products/WinesAndLiquors';
 function App() {
   const [isOpenNav, setIsOpenNav] = useState(false);
   const [isOpenMenuLanguage, setIsOpenMenuLanguage] = useState(false);
+  const [isTranslateReady, setIsTranslateReady] = useState(false);
 
   const toggleNav = () => {
     setIsOpenNav(!isOpenNav);
@@ -23,6 +24,25 @@ function App() {
   const toggleMenuLanguage = () => {
     setIsOpenMenuLanguage(!isOpenMenuLanguage);
   };
+
+  useEffect(() => {
+    // Aspetta 5 secondi prima di inizializzare Google Translate
+    const timer = setTimeout(() => {
+      if (window.google && window.google.translate) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'it',
+            includedLanguages: 'en,it,fr,de,es',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+          },
+          'google_translate_element'
+        );
+        setIsTranslateReady(true);
+      }
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <Router>
@@ -35,11 +55,20 @@ function App() {
         {/* Sidebar */}
         <Sidebar isOpenNav={isOpenNav} toggleNav={toggleNav} />
 
-        {/* Pulsante per aprire il selettore di lingua */}
-        <button className="bg-red-500 hidden sm:block rounded p-3 absolute top-2 right-2" onClick={toggleMenuLanguage}> <FaFlag/> </button>
+        {/* Pulsante per aprire il selettore di lingua - visibile solo dopo 5 secondi */}
+        {isTranslateReady && (
+          <button className="bg-red-500 hidden sm:block rounded p-3 absolute top-2 right-2" onClick={toggleMenuLanguage}> 
+            <FaFlag/> 
+          </button>
+        )}
         
         {/* Selettore di lingua Google Translate */}
-        <div id="google_translate_element" className={`text-center p-2 rounded-lg shadow-lg absolute top-16 right-0 ${isOpenMenuLanguage ? '' : 'hidden'}`}></div>
+        <div 
+          id="google_translate_element" 
+          className={`text-center p-2 rounded-lg shadow-lg absolute top-16 right-0 bg-white z-50 transition-opacity duration-300 ${
+            isOpenMenuLanguage ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
+        ></div>
 
         {/* Content area per le varie pagine */}
         <div className="flex-grow">
@@ -53,7 +82,6 @@ function App() {
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/events" element={<Events />} />
             <Route path="*" element={<Home />} />
-            {/* IN CASO DI PATH ERRATO -> HOME */}
           </Routes>
         </div>
       </div>
