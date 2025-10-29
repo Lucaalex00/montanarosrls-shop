@@ -84,6 +84,7 @@ const OthersManagement = () => {
                         />
                         <div className="ml-2 sm:ml-5 flex flex-col gap-2 justify-between max-h-[300px] overflow-y-auto">
                             <h2 className="text-3xl font-semibold mb-1">{other.name}</h2>
+                            <h2 className="text-xl font-semibold mb-1">{other.price}</h2>
                             <h5 className='italic mb-2'>{other.source}</h5>
                             <p className='text-gray-700'><strong> </strong> {other.size}</p>
                             <p><samp> {other.type}</samp> </p> 

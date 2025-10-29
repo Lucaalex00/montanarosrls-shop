@@ -113,6 +113,7 @@
         "id": 10,
         "name": "Coca Cola in Vetro",
         "type": "Coca Cola",
+        "price":"2.50€",
         "size": "1l",
         "availability": true,
         "description" : "Il formato Coca-Cola che tutti amano.",

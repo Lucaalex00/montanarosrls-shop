@@ -96,7 +96,11 @@ const BeersManagement = () => {
                                     <span className="text-red-500 font-bold">Non disponibile</span>
                                 )}
                             </p>
-                            <p><strong>Edizione Limitata:</strong> {beer.limited_event}</p>
+                             {beer.limited_event ? (
+                                    <p><strong>Edizione Limitata:</strong> {beer.limited_event}</p>
+                                ) : (
+                                    ""
+                                )}
                             {beer.collab && (
                                 <p><strong>Collaborazione: </strong> {beer.collab}</p>
                             )}
