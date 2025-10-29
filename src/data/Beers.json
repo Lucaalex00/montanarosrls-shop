@@ -488,5 +488,33 @@
         "image": "https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE",
         "collab": null,
         "collab_link": null
+    },
+    {
+        "id": 36,
+        "name": "Ceres",
+        "type": "Scura",
+        "alcohol_content": 8.7,
+        "size": "33cl",
+        "availability": true,
+        "source": "Danimarca",
+        "description" : "Ceres, c'è !",
+        "limited_event" : "",
+        "image": "/images/beers-images/Ceres 33cl.jpg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 37,
+        "name": "Moretti",
+        "type": "Bionda",
+        "alcohol_content": 5,
+        "size": "33cl",
+        "availability": true,
+        "source": "Italia",
+        "description" : "Il baffo biondo italiano",
+        "limited_event" : "",
+        "image": "/images/beers-images/Moretti 33cl.webp",
+        "collab": null,
+        "collab_link": null
     }
-]
+]   
