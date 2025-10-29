@@ -23,7 +23,16 @@
       "start_date": "2024-10-19",
       "end_date": "2024-10-20",
       "location": "Monteu Roero",
-      "map_link": "hhttps://maps.app.goo.gl/g6c3HVRCJh3uA1rb8",
+      "map_link": "https://maps.app.goo.gl/g6c3HVRCJh3uA1rb8",
       "poster_image": "/images/events-images/Monteuroero-festa-olistica.jpg"
+    },
+    {
+      "id": 4,
+      "title": "La migliore birra al mondo all'Agriturismo",
+      "start_date": "2025-11-07",
+      "end_date": "2025-11-07",
+      "location": "Agliano Terme",
+      "map_link": "https://maps.app.goo.gl/QdjLcZE68wxTN5Zj6",
+      "poster_image": "/images/events-images/lamigliorebirra-aglianoterme.jpg"
     }
 ]
