@@ -2,7 +2,7 @@ import React from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
 const ContactPage = () => {
-  const imagePath = '/images/info-images/Montanaro-FRONT.jpeg';
+  const imagePath = '/images/info-images/Montanaro-FRONT.jpg';
   const phoneNumberAndrea = '+393357443529';
   const whatsappLink = (phoneNumber) => `https://wa.me/${phoneNumber}`;
 
