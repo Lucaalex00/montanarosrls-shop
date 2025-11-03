@@ -589,7 +589,7 @@
       },
       {
         "id": 43,
-        "name": "Crinally Bad Elf",
+        "name": "Criminally Bad Elf",
         "type": "Dorato Intenso",
         "alcohol_content": 10.5,
         "size": "33cl - 7.00€",
@@ -609,11 +609,97 @@
         "size": "50cl - 7€",
         "availability": true,
         "source": "Inghilterra",
-        "description" : "Barley Wine di carattere e con gradazione adeguata allo stile, si presenta al naso con aromi dolcissimi di confettura di albicocca e frutta caramellata. La dolcezza è protagonista anche al palato accompagnata però da una buona componente amara che rende vivace la birra. Birra molto strutturata con forte componente alcolica e vinosa",
+        "description" : "dal colore bruno-rossastro ha aromi di caramello e nocciola. Aromi di malti dolci e nocciole colpiscono il palato con un corpo medio-leggero. Una splendida English Brown, di facile beva, perfetta per l'inverno e riscaldare il nostro Natale",
         "limited_event" : "Natale",
         "image": "/images/beers-images/warm welcome.jpg",
         "collab": null,
         "collab_link": null
+      },
+      {
+        "id": 45,
+        "name": " Lump of Coal - GLUTEN GREE",
+        "type": "Scura",
+        "alcohol_content": 7.5,
+        "size": "50cl- 5€",
+        "availability": true,
+        "source": "Inghilterra",
+        "description" : "Lump of Coal é l'espressione con la quale il mondo anglosassone chiama il carbone di zucchero che Santa Claus porta ai bambini che non sono stati bravi durante l'anno. E il nome, per questa Stout robusta, non poteva essere più adatto. Un cappello di schiuma compatta e nocciola custodisce una birra molto ricca, con note decise di tostato e di cioccolato e un finale dominato dagli aromi tostati. Una birra non comune, fuori dalle regole. Non sempre vale la pena essere troppo buoni.",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/lump of coal.png",
+        "collab": null,
+        "collab_link": null
+      },
+      {
+        "id": 46,
+        "name": "Winter Welcome",
+        "type": "Ambrata",
+        "alcohol_content": 6,
+        "size": "55cl- 8€",
+        "availability": true,
+        "source": "Inghilterra",
+        "description" : "La Samuel Smith Winter Welcome Ale è la proposta stagionale del birrificio inglese Samuel Smith. Di colore ambrato carico è una birra stagionale che rispetta le tradizioni inglesi e quindi  viene prodotta senza l’aggiunta di nessuna spezia. Dal corpo abbastanza intenso e dal carattere maltato è una birra stagionale molto più soft rispetto alle “classiche” birre per l’inverno, ma di gradazione e corpo leggermente più consistenti delle classiche birre in produzione dal birrificio Samuel Smith.",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/winter welcome s.smith.jpg",
+        "collab": null,
+        "collab_link": null
+      },
+      {
+        "id": 47,
+        "name": "St. Bernardus XmasAle",
+        "type": "Bruna",
+        "alcohol_content": 10,
+        "size": "33cl - 7€",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Una birra ad alta fermentazione che rappresenta perfettamente lo stile Christmas Ale: colore scuro e profondo, calde note di frutta secca e frutti rossi, un corpo pieno e rotondo dalla sensazione vellutata che,con una gradazione alcolica importante,una birra che scalda il corpo ed l'anima!",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/st._bernardus_xmas ale33.jpg",
+        "collab": null,
+        "collab_link": null
+      },
+      {
+        "id": 48,
+        "name": "St. Feuillen Cuvèe de Noel",
+        "type": "Ambrata",
+        "alcohol_content": 9,
+        "size": "33cl - 5.00€",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Questa birra ha uno sviluppo di schiuma pieno, il colletto è compatto e stabile. L'orzo tostato crea una tinta brunastra. Il colore è rosso rubino intenso. Il naso è sorpreso da un intenso sviluppo dell'aroma. Gli aromi contribuiscono notevolmente a questo piacevole profumo. La birra ha un gusto molto rotondo, una morbidezza derivante da una sinergia tra malti tostati, una fermentazione attentamente monitorata e una lunga permanenza in cella frigorifera. Il retrogusto amarognolo supporta un insieme armonioso di componenti bilanciati.",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/st-feuillien-noel.jpeg",
+        "collab": null,
+        "collab_link": null
+      },
+      {
+        "id": 49,
+        "name": "Xocoveza Lattina",
+        "type": "Ebano",
+        "alcohol_content": 9.1,
+        "size": "35.5cl - 6.00€",
+        "availability": true,
+        "source": "USA",
+        "description" : "Raffigura una delle birre più rappresentative di Stone e si ispira alle Imperial Stout Mexican Cake. Viene realizzata con l’aggiunta di cacao, caffè, vaniglia, peperoncini Pasilla, cannella e noce moscata. Aroma ricco di tostature, cacao, caffè, cioccolato fondente, fragranze speziate e piccanti. Carbonatazione leggera, consistenza medio-spessa. Morbida, liscia ed abbastanza densa al palato, rivela un sapore intenso che richiama le calde note percepite all’olfatto, seguite da una moderata amarezza. Retrogusto dolce e zuccherino, caratterizzato da una persistente nota piccante di peperoncino. “Prodotta per la prima volta nel 2014 in collaborazione con la brewery messicana Cerveceria Insurgente e con l'homebrewer di San Diego Chris Banker, dopo che la sua ricetta è stata nominata vincitrice della nostra competizione annuale di homebrew, si rilevò un successo immediato ed i fan hanno iniziato a chiedere a gran voce il suo ritorno. Visto che il suo incredibile profilo aromatico evoca la cioccolata calda messicana, con caffè, peperoni Pasilla, vaniglia, cannella, noce moscata e una generosa quantità di cioccolato, abbiamo concluso che era la birra scura perfetta da ripubblicare per celebrare le feste Natalizie e tutta la stagione invernale",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/xocoveza latt.jpeg",
+        "collab": null,
+        "collab_link": null
+      },
+      {
+        "id": 50,
+        "name": "F*ck de Kerstboom Staat in de Fik!",
+        "type": "Scura",
+        "alcohol_content": 10,
+        "size": "33cl - 9.00€",
+        "availability": true,
+        "source": "Olanda",
+        "description" : "La birra natalizia annuale di Uiltje. La Fantastic F*ck Christmas Tree. Una stout d'avena con arancia e caffè.",
+        "limited_event" : "Natale",
+        "image": "/images/beers-images/Uiltje_FCK.jpg",
+        "collab": null,
+        "collab_link": null
       }
+
+
 
 ]   
