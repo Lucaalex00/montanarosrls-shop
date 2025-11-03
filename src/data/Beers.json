@@ -603,15 +603,15 @@
       },
       {
         "id": 44,
-        "name": "Crinally Bad Elf",
+        "name": "Warm Welcome",
         "type": "Tonaca di frate",
         "alcohol_content": 6,
-        "size": "50cl",
+        "size": "50cl - 7€",
         "availability": true,
         "source": "Inghilterra",
         "description" : "Barley Wine di carattere e con gradazione adeguata allo stile, si presenta al naso con aromi dolcissimi di confettura di albicocca e frutta caramellata. La dolcezza è protagonista anche al palato accompagnata però da una buona componente amara che rende vivace la birra. Birra molto strutturata con forte componente alcolica e vinosa",
         "limited_event" : "Natale",
-        "image": "/images/beers-images/criminally_50cl.avif",
+        "image": "/images/beers-images/warm welcome.jpg",
         "collab": null,
         "collab_link": null
       }
