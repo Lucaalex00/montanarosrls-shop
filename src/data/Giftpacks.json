@@ -112,5 +112,34 @@
         "image": "https://via.placeholder.com/200x200/cccccc/ffffff?text=IMMAGINE+NON+DISPONIBILE",
         "collab": null,
         "collab_link": null
+    },
+    {
+        "id": 9,
+        "name": "Brewdog- Hoppy Xmas",
+        "type": "Dorata",
+        "alcohol_content": 12,
+        "size": "12 x 33 cl - lattine",
+        "availability": true,
+        "source": "Scozia",
+        "description" : "Realizzata con luppolo Simcoe, offre un' esplosione di sapori fruttati e agrumati: papaya e ananas danzano su una solida base maltata.",
+        "limited_event" : "Natale",
+        "image": "HoppyXmas-latt.jpg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 10,
+        "name": "12 Beers of Xmas - Special pack",
+        "type": "Misto",
+        "alcohol_content": null,
+        "size": "12 x 33 cl - lattine miste",
+        "availability": true,
+        "source": "Scozia",
+        "description" : "Una speciale confezione in EDIZIONE LIMITATA con 12 lattine diverse, tra cui delle birre più iconiche di BrewDog e nuove creazioni inedite, per gustare tutta la varietà delle birre BrewDog.",
+        "limited_event" : "Natale",
+        "image": "12BeersOfXmas.jpg",
+        "collab": null,
+        "collab_link": null
     }
+
 ]
