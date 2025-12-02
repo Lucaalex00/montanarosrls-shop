@@ -3,14 +3,14 @@ import FooterComponent from '../components/FooterComponent';
 
 const Home = () => {
   const images = [
-    "/images/beers-images/Malonne Bière Brut Calvados 75cl.jpeg",
-    "/images/beers-images/Still Nacht 33cl.jpeg",
-    "/images/beers-images/Père Noèl 33cl.jpeg",
-    "/images/giftpacks-images/Westvleteren 2x33cl.jpeg",
-    "/images/beers-images/Corsendonk Christmas 33cl.jpeg",
-    "/images/beers-images/Lupulus Hibernatus 33cl.jpeg",
-    "/images/beers-images/Gouden Carolus 75cl.jpeg",
-    "/images/beers-images/Mikkeller 75cl.jpeg",
+    "/images/giftpacks-images/BrewdogHoppyXmas.jpg",
+    "/images/beers-images/Gouden Carolus 33cl.jpeg",
+    "/images/beers-images/criminally_33cl.jpg",
+    "/images/beers-images/xocoveza latt.jpeg",
+    "/images/beers-images/st._bernardus_xmas ale33.jpg",
+    "/images/giftpacks-images/TrappistesRochefort.jpg",
+    "/images/giftpacks-images/PanettoneZago600gr.jpg",
+    "/images/beers-images/LaTrappex4.jpg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
