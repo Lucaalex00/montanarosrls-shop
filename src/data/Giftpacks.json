@@ -140,6 +140,62 @@
         "image": "/images/giftpacks-images/Specialpack-XmasLatt.jpg",
         "collab": null,
         "collab_link": null
+    },
+     {
+        "id": 11,
+        "name": "Rochefort - Special Pack",
+        "type": "Misto",
+        "alcohol_content": null,
+        "size": "3 x 33 cl - bottiglie miste + bicchiere",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Confezione contenente 3 bottiglie da 33cl di birra trappista Rochefort. La Bionda da 7,5°, la Scura Rossastra da 9,2° e la Scura da 11,3°. Accompagnate da un esclusivo bicchiere firmato Rochfort.",
+        "limited_event" : "Natale",
+        "image": "/images/giftpacks-images/TrappistesRochefort.jpg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 12,
+        "name": "Chimay Trilogy",
+        "type": "Bionda, Rossa e scura + Bicchiere",
+        "alcohol_content": null,
+        "size": "3 x 33 cl - bottiglie miste + bicchiere",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Confezione contenente 3 bottiglie da 33cl di birra trappista Chimay, con aggiunta di un originale ed esclivo bicchiere marchiato CHIAMAY.",
+        "limited_event" : "Natale",
+        "image": "/images/giftpacks-images/ChimayTrilogy.jpg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 13,
+        "name": "St. Bernardus",
+        "type": null,
+        "alcohol_content": null,
+        "size": "6 x 33 cl - bottiglie miste + bicchiere",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Confezione contenente 3 bottiglie da 33cl di birra trappista Chimay, con aggiunta di un originale ed esclivo bicchiere marchiato CHIAMAY.",
+        "limited_event" : "Natale",
+        "image": "/images/giftpacks-images/SanBernardus.jpg",
+        "collab": null,
+        "collab_link": null
+    },
+    {
+        "id": 14,
+        "name": "La Chouffe",
+        "type": null,
+        "alcohol_content": null,
+        "size": "2 Bottiglie da 75cl + 2 bicchieri",
+        "availability": true,
+        "source": "Belgio",
+        "description" : "Una speciale confezione contenente 1 bottiglia di La Chouffe da 75cl + 1 bottiglia di Mc Chouffe da 75cl + 2 Bicchiefi esclusivi.",
+        "limited_event" : "Natale",
+        "image": "/images/giftpacks-images/LaChouffe.jpg",
+        "collab": null,
+        "collab_link": null
     }
 
 ]
